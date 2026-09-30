@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "headers": [
+    { "source": "/(.*)\\.pdf", "headers": [ { "key": "Content-Disposition", "value": "attachment" } ] },
+    { "source": "/(.*)\\.(jpg|png|svg)", "headers": [ { "key": "Cache-Control", "value": "public, max-age=604800" } ] }
+  ]
+}
